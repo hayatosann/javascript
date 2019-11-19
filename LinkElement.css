@@ -1,25 +1,50 @@
-div {
+*{
   position: absolute;
 }
-#panel{
-  left: 100px;
+
+div{
+  border-radius: 50%;
+}
+#face{
+  width: 200px;
+  height: 200px;
+  background-color: orange;
+}
+.eye-left {
+  width: 20px;
+  height: 30px;
+  background-color: black;
   top: 50px;
-  width: 300px;
-  height: 100px;
-  background-color: lightgreen;
+  left: 50px;
 }
-.button{
-  width: 50px;
-  height: 25px;
-  color: white;
-  background-color: blue;
-  border: 5px solid yellow;
-  text-align: center;
-  font-size: 24px;
+ .eye-right {
+  width: 20px;
+  height: 30px;
+  background-color: black;
+  top: 50px;
+  left: 125px;
 }
-.yes{
-  top: 20px; left: 70px; 
+
+.mouth-left{
+  width:50px;
+  height:50px;
+  background-color: red;
+  top: 100px;
+  left: 20px;
 }
-.no{
-  top:20px; left:200px;
+
+.mouth-right{
+  width:50px;
+  height:50px;
+  background-color: red;
+  top: 100px;
+  left: 125px;
+}
+
+.nose{
+  width:60px;
+  height:60px;
+  background: blue;
+  top: 95px;
+  left:70px;
 }
