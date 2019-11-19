@@ -1,9 +1,10 @@
 *{
+  border-radius: 50%;
   position: absolute;
 }
 
 div{
-  border-radius: 50%;
+ 
 }
 #face{
   width: 200px;
