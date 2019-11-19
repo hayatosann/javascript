@@ -1,19 +1,25 @@
-*{
-  font-size: 12px;
+div {
+  position: absolute;
 }
-h1{
-  font-size: 22px;
+#panel{
+  left: 100px;
+  top: 50px;
+  width: 300px;
+  height: 100px;
+  background-color: lightgreen;
 }
-#comment{
-  color: green;
+.button{
+  width: 50px;
+  height: 25px;
+  color: white;
+  background-color: blue;
+  border: 5px solid yellow;
+  text-align: center;
+  font-size: 24px;
 }
-.even{
-  color:purple;
+.yes{
+  top: 20px; left: 70px; 
 }
-.odd{
-  color: red;
-}
-p {
-  color:white;
-  background-color:blue;
+.no{
+  top:20px; left:200px;
 }
