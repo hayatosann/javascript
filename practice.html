@@ -1,18 +1,23 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="LinkElement.css">
-  </head>
-  <body>
-   <div id="face">
-     <div class="eye-left"></div>
-     <div class="eye-right"></div>
-     <div class="mouth-left"></div>
-     <div class="mouth-right"></div>
-     <div class="nose"></div>
-     
-   </div>
-  </body>
-  
+<head>
+  <script>
+  function checkEven(){
+    var v =document.getElementById("number").value;
+    var r =document.getElementById("result");
+    if(isNaN(v)){
+      r.textContent= v+"は数字ではありません";
+      }else{r.textContent=v+"は数字です";
+      }
+  }
+  </script>
+</head>
+<body>
+  <input id="number"/>
+  <button onclick="checkEven()">入力判定</button>
+  <p id="result"></p>
+</body>
 </html>
+
+
+
 
