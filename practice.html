@@ -3,12 +3,12 @@
   <script>
   function checkEven(){
     var v =document.getElementById("number").value;
-    var r =document.getElementById("result");
-    if(isNaN(v)){
-      r.textContent= v+"は数字ではありません";
-      }else{
-        r.textContent= (v % 2 == 0)? "偶数" : "奇数";
-      }
+    var r =0;
+    for (var i= 1; i <=v ;i++){
+      r+=i;
+    }
+    var s = "1から" + v + "の合計は" + r + "です。";
+    document.getElementById("result").textContent = s
   }
   </script>
 </head>
