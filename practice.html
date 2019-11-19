@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <head>
   <script>
-  function checkEven(){
-    var v =document.getElementById("number").value;
-    var r =0;
-    for (var i= 1; i <=v ;i++){
-      r+=i;
-    }
-    var s = "1から" + v + "の合計は" + r + "です。";
-    document.getElementById("result").textContent = s
+  function insertItem(){
+    var container =document.getElementById("container");
+    var item =document.createElement(li);
+    item.textContent ="hello";
+    container.appendChild(item);
   }
   </script>
 </head>
