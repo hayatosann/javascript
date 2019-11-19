@@ -3,16 +3,24 @@
   <script>
   function insertItem(){
     var container =document.getElementById("container");
-    var item =document.createElement(li);
+    var item =document.createElement("li");
     item.textContent ="hello";
     container.appendChild(item);
+  }
+  function removeItem(){
+    var container =document.getElementById("container");
+    var item =container.lastChild;
+    if (item){
+      container.removeChild(item);
+    }
+    
   }
   </script>
 </head>
 <body>
-  <input id="number"/>
-  <button onclick="checkEven()">入力判定</button>
-  <p id="result"></p>
+  <button onclick="insertItem()">insert</button>
+  <button onclick="removeItem()">remove</button>
+  <ol id="container"></ol>
 </body>
 </html>
 
