@@ -5,7 +5,7 @@
   var ufo;
   function init(){
     window.addEventListener("keydown", keydown);
-    ufo = new UFO(document.getElementById("ufo"), 100);
+    ufo = new UFO(document.getElementById("ufo"), 100); //第一引数はDOM要素,第二引数はx座標
   }
 
   function keydown(e){
@@ -15,9 +15,9 @@
       ufo.moveRight();
     }
   }
-  function UFO(_elem, _xpos){
-    this.elem = _elem;
-    this.xpos = _xpos;
+  function UFO(_elem, _xpos){ //thisはオブジェクト自身
+    this.elem = _elem;　　//<div id="ufo"><(ooo)></div>をthis.elemに入れる
+    this.xpos = _xpos;　　//100をthis.xposに入れる
     this.moveLeft = function(){
       this.xpos -= 10;
       this.elem.style.left = this.xpos + "px";
