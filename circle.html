@@ -10,7 +10,11 @@
       ctx.fillStyle = "#00FF00";
       ctx.lineWidth = 5;
 
-      
+      ctx.beginPath();
+      ctx.arc(100,50,30,0,2*Math.PI);
+      ctx.closePath();
+      ctx.fill();
+
     }
     </script>
   </head>
